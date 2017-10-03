@@ -1,0 +1,4 @@
+Dentro do diretório
+
+1) Instale o bundle -> gem install bundler
+2) Instale a gem do bundler -> bundle install
