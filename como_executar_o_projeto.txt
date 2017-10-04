@@ -5,12 +5,18 @@ Dentro do diretório desafio-nutripad
 4) Execute os testes -> bundle exec rspec --format documentation
 
 Como construi o algoritmo
-- 
+- Criei um método find que é resposável por encontrar o simbolo romano.
+esse método tem dois parâmetros, o número natual e o simbolo romano (inicializado como vazio, 
+fiz isso pois eu precisava passar para próprio método usando recursividade o simbolo romano atual)
+
+- Depois disso eu itero sobre o hash que contém as simbolos e valores, percorro até achar o maior 
+número natural menor ou igual ao número passado parâmetro.
+
+- Depois eu subtraio o numero natual do valor encontrado na descrição acima e passo para a recursão
+com simbolo atual até o valor ser zero, ou seja, já recursou o suficiente para encontrar o resultado
+
+- outra coisa importante foi ter deixado os simbolos em ordem decrescente.
+
 
 Utilizei este site abaixo para gerar números decimais e romanos para serem usados no teste.
 https://www.calculateme.com/cRomanNumerals/ArabicNumeralsToRoman.htm
-
-A descrição das regras eu encontrei nesse site.
-http://www.rapidtables.com/convert/number/how-number-to-roman-numerals.htm
-
-

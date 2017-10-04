@@ -2,12 +2,15 @@ class Roman
 
   def initialize
     @simbols = {'M': 1000, 'CM': 900, 'D': 500, 'CD': 400, 'C': 100, "XC":90, 
-                 'L': 50, 'XL': 40, 'X': 10, 'IX': 9, 'V': 5, 'IV': 4, 'I': 1}
+                'L': 50, 'XL': 40, 'X': 10, 'IX': 9, 'V': 5, 'IV': 4, 'I': 1}
   end
 
   def convert_number_to_roman(natural_number)
+    return if invalid_value?(natural_number)
     find(natural_number)
   end
+
+  private
 
   def find(natural_number, roman_simbol = '')
     roman_value = 0
@@ -23,5 +26,9 @@ class Roman
     return roman_simbol if natural_number == 0
 
     find(natural_number, roman_simbol)
+  end
+
+  def invalid_value?(natural_number)
+    raise 'enter a number more than zero' if natural_number.nil? || natural_number == 0
   end
 end
