@@ -1,27 +1,27 @@
 class Roman
 
   def initialize
-    @simbolos = {'M': 1000, 'CM': 900, 'D': 500, 'CD': 400, 'C': 100, "XC":90, 
+    @simbols = {'M': 1000, 'CM': 900, 'D': 500, 'CD': 400, 'C': 100, "XC":90, 
                  'L': 50, 'XL': 40, 'X': 10, 'IX': 9, 'V': 5, 'IV': 4, 'I': 1}
   end
 
-  def converte_numero_para_romano(numero)
-    busca(numero)
+  def convert_number_to_roman(natural_number)
+    find(natural_number)
   end
 
-  def busca(numero, simbolo_romano = '')
-    valor_romano = 0
-    @simbolos.each do |key, value|
-      if value <= numero
-        simbolo_romano << key.to_s
-        valor_romano = value
+  def find(natural_number, roman_simbol = '')
+    roman_value = 0
+    @simbols.each do |key, value|
+      if value <= natural_number
+        roman_simbol << key.to_s
+        roman_value = value
         break
       end
     end
 
-    numero = numero - valor_romano
-    return simbolo_romano if numero == 0
+    natural_number = natural_number - roman_value
+    return roman_simbol if natural_number == 0
 
-    busca(numero, simbolo_romano)
+    find(natural_number, roman_simbol)
   end
 end
