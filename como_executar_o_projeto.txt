@@ -12,7 +12,7 @@ fiz isso pois eu precisava passar para próprio método simbolo romano atual usa
 - Depois disso eu itero sobre o hash que contém as simbolos e valores, percorro até achar o maior 
 número natural menor que o número passado como parâmetro.
 
-- Depois eu subtraio o número natual do valor encontrado na descrição acima e passo para a recursão
+- Depois eu subtraio o número natural do valor encontrado na descrição acima e passo para a recursão
 com simbolo atual até o valor ser zero, ou seja, já recursou o suficiente para encontrar o resultado
 
 - outra coisa importante foi ter deixado os simbolos em ordem decrescente.
