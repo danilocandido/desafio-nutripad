@@ -1,4 +1,16 @@
-Dentro do diretório
+Dentro do diretório desafio-nutripad
 
 1) Instale o bundle -> gem install bundler
-2) Instale a gem do bundler -> bundle install
+2) Instale a gem do rspec -> bundle install (já adicionada no GemFile)
+4) Execute os testes -> bundle exec rspec --format documentation
+
+Como construi o algoritmo
+- 
+
+Utilizei este site abaixo para gerar números decimais e romanos para serem usados no teste.
+https://www.calculateme.com/cRomanNumerals/ArabicNumeralsToRoman.htm
+
+A descrição das regras eu encontrei nesse site.
+http://www.rapidtables.com/convert/number/how-number-to-roman-numerals.htm
+
+
